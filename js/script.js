@@ -33,19 +33,25 @@ for(let i = 1; i <= 100; i++){
     if(i % 3 == 0 && i % 5 == 0){
         squared.innerHTML='FizBuzz'
         squared.style.backgroundColor ='#f0466f';
+        squared.style.fontStyle='italic';
+
     }else if(i % 3 == 0){
         squared.innerHTML='fizz'
         squared.style.backgroundColor ='#0cd6a1';
+        squared.style.fontStyle='italic';
+
 
     }else if(i % 5 == 0){
         squared.innerHTML='buzz'
         squared.style.backgroundColor ='#ffd166';
+        squared.style.fontStyle='italic';
+        
+
         // squared.style.height='100px';
         // squared.style.width='100px';
 
     }else{
         squared.style.backgroundColor ='#1389b2';
-
     }
     
 }
