@@ -14,5 +14,38 @@ Consegna:
 -?se 'i' è divisible per 5 scrivo buzz
 -?se 'i' è divisible per 5 e 3 scrivo  fizzbuzz
 
-
 */
+
+
+let containerEl =document.getElementById('container');
+
+// ciclo per creare i quadrati
+for(let i = 1; i <= 100; i++){
+
+    let squared = document.createElement('div');
+    
+    containerEl.append(squared);
+    
+    squared.innerHTML=i;
+
+    // if per assegnare  FizBuzz Fiz Buzz
+
+    if(i % 3 == 0 && i % 5 == 0){
+        squared.innerHTML='FizBuzz'
+        squared.style.backgroundColor ='#f0466f';
+    }else if(i % 3 == 0){
+        squared.innerHTML='fizz'
+        squared.style.backgroundColor ='#0cd6a1';
+
+    }else if(i % 5 == 0){
+        squared.innerHTML='buzz'
+        squared.style.backgroundColor ='#ffd166';
+        // squared.style.height='100px';
+        // squared.style.width='100px';
+
+    }else{
+        squared.style.backgroundColor ='#1389b2';
+
+    }
+    
+}
